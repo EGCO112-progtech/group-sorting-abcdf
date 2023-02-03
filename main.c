@@ -8,7 +8,7 @@ int main() {
   int i,j,new_number;
   display(a,N);
   bubbleSort(a,N); 
-   //insertion(a,N);
+  //insertion(a,N);
 
   // selectionSort(a,N);
   display(a,N);
