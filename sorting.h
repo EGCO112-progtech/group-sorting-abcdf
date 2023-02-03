@@ -65,4 +65,3 @@ void insertion(int a[], int n) {
         
     }
 }
-
