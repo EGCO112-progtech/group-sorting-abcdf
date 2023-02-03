@@ -40,8 +40,7 @@ void bubbleSort(int a[],int n)
    
 
   }
-  
-}
+  }
 void selectionSort(int a[], int n) {
   int i, j, m, k;
   for (j = 0; j < n - 1; j++) {
@@ -57,6 +56,7 @@ void selectionSort(int a[], int n) {
     display(a, n);
     printf("\n");
   }
+  printf("\n");
 }
 
 void insertion(int a[], int n) {
@@ -68,11 +68,11 @@ void insertion(int a[], int n) {
             break;
           else 
             a[i+1]=a[i];
-            display(a,n);
+            display(a, n);
           }
           a[i+1] = value;
           display(a, n);
-          printf("\n");
-        
+          printf("\n");    
     }
+  printf("\n");
 }
