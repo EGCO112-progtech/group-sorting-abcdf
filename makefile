@@ -1,8 +1,12 @@
 compile: main.c 
-	 gcc  main.c -o sort
+	 gcc  main.c -o test
 
-run: sort
-	 ./sort
+runSelection: selection
+	  ./selection
 
-clean: sort
-	 rm sort
+run: test
+	 ./test
+
+
+clean: test
+	 rm test
