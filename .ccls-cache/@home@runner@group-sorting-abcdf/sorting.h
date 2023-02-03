@@ -23,7 +23,7 @@ void selectionSort(int data[], int length)
 
 void insertion(int a[],int n){
 
-//  printf("insertion complete!"); 
+//  printf("Insertion complete!"); 
 }
 
 void swap(int *a,int *b){
