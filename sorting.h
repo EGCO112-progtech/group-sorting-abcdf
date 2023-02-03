@@ -10,21 +10,6 @@ void display(int a[],int n){
   
 }
 
-void selectionSort(int data[], int length) 
-{ 
-	int i, j, m, mi; 
-	
-     display(data,length);
-     
-	
-} 
-
-
-
-void insertion(int a[],int n){
-
-
-}
 
 void swap(int *a,int *b){
  int temp;
@@ -59,6 +44,37 @@ void bubbleSort(int a[],int n)
   
 }
 
+void selectionSort(int a[], int n) {
+  int i, j, m, k;
+  for (j = 0; j < n - 1; j++) {
+    m = a[j];
+    k = j;
+    for (i = j + 1; i < n; i++) {
+      if (m < a[i]) {
+        m = a[i];
+        k = i;
+      }
+    }
+    swap(&a[j], &a[k]);
+    display(a, n);
+    printf("\n");
+  }
+}
 
-
-
+void insertion(int a[], int n) {
+  int j,i,tmp;
+    for(j=1;j<n;j++){
+      int value = a[j];
+        for(i = j-1; i >= 0 ;i--){
+          if(value<a[i])
+            break;
+          else 
+            a[i+1]=a[i];
+            display(a,n);
+          }
+          a[i+1] = value;
+          display(a, n);
+          printf("\n");
+        
+    }
+}
