@@ -15,7 +15,7 @@ void selectionSort(int data[], int length)
 	int i, j, m, mi; 
 	
      display(data,length);
-     
+//  printf("Selection complete!");   
 	
 } 
 
@@ -23,7 +23,7 @@ void selectionSort(int data[], int length)
 
 void insertion(int a[],int n){
 
-
+//  printf("insertion complete!"); 
 }
 
 void swap(int *a,int *b){
@@ -38,12 +38,12 @@ void bubbleSort(int a[],int n){
 
 int i,j;
 int sorted;
-// how may pair to compare?
+// How may pair to compare?
 for(j=1;j<=n-1;j++){
  
   display(a,n);
  }
-  
+//  printf("Bubble complete!"); 
 }
 
 

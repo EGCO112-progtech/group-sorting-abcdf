@@ -4,16 +4,16 @@
 #include "sorting.h"
 
 int main(int argc, char **argv){ //argc=argument count, argv=argument variable
-  int i,j=0,N=argc-1,*a=(int*)malloc(sizeof(int)*N);
+  int i,j=0,N=argc-2,*a=(int*)malloc(sizeof(int)*N);
   for(i=0;i<N;i++)
   {
     a[i]=atoi(argv[i+2]);
   }
+//  printf("%s",argv[1]);
   display(a,N);
-  char *type=(char*)malloc(sizeof(char)*strlen(argv[1]));
-  if (strcmp(type,"bubble")==0) bubbleSort(a,N);
-  else if (strcmp(type,"selection")==0) selectionSort(a,N);
-  else if (strcmp(type,"insertion")==0) insertion(a,N);
+  if (strcmp(argv[1],"bubble")==0) bubbleSort(a,N);
+  else if (strcmp(argv[1],"selection")==0) selectionSort(a,N);
+  else if (strcmp(argv[1],"insertion")==0) insertion(a,N);
   display(a,N);
   return 0;
 }
